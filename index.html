@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup</title>
+  <style>
+   header {
+      background-color: gold; 
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      color: black;
+      font-size: 3rem;
+      margin: 0;}
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+   
+    .hero {
+      background-image: url('hero-background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color:snow;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .hero h2 {
+      font-size: 4rem;
+      margin-bottom: 1rem;}
+
+    .featured-section {
+      padding: 4rem 2rem;
+      background-color: #f5f5f5;
+    }
+
+    .featured-section h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .featured-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+    }
+
+    .featured-item {
+      background-color: lightgoldenrodyellow;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .featured-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .featured-item-content {
+      padding: 1.5rem;
+    }
+
+    .featured-item h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .featured-item p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .site-footer {
+      background-color: skyblue;
+      color: black;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .featured-item button {
+      background-color:darkcyan;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .featured-item button:hover {
+      background-color: #c3272b;
+    }
+    .featured-section {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  background-image: url('homepageimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+  z-index: -1;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FIFA World Cup</h1>
+  </header>
+  <div class="hero">
+    <h2>Welcome to the FIFA World Cup</h2>
+    <p>Witness the greatest football tournament in the world!</p>
+  </div>
+
+  <section class="featured-section">
+    
+    <h2>Featured Content</h2>
+    <div class="featured-items">
+      <div class="featured-item">
+        <div class="featured-item-content">
+          <h3>World Cup History</h3>
+          <p>Explore the rich history of the FIFA World Cup, from its inception in 1930 to the present day. Discover the iconic moments, legendary players, and unforgettable matches that have defined this global event.</p>
+          <button onclick="window.location.href='world-cup-history.html'">Learn More</button>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-item-content">
+          <h3>Hosting Nations </h3>
+          <p>The 2026 FIFA World Cup will be co-hosted by the United States, Canada, and Mexico, marking a historic moment for the tournament's global reach and impact.</p>
+          <button onclick="window.location.href='hosting nations.html'">Learn More</button>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-item-content">
+          <h3>Fun Facts about the world cup</h3>
+          <p>Explore fascinating insights from decades of FIFA World Cup history by clicking the link below.
+          </p>
+          <button onclick="window.location.href='Funfacts-worldcup.html'">Learn More</button>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-item-content">
+          <h3> About Heros</h3>
+          <p>The FIFA World Cup has produced legendary heroes whose skill, determination, and sheer force of will have captivated global audiences. These extraordinary figures inspire generations as icons of the beautiful game.</p>
+          <button onclick="window.location.href='hero section.html'">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 FIFA World Cup. All rights reserved.</p>
+  </footer>
+</body>
+</html>
